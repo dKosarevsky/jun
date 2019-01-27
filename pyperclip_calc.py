@@ -1,0 +1,13 @@
+import pyperclip
+print('Убедитесь что вы заранее скопировали текст')
+print('------------------------------------------')
+s = pyperclip.paste()
+s = s.replace('\n','')
+s = s.replace('\r','')
+n1 = len(s)
+s = s.replace(' ','')
+n2 = len(s)
+print('Количество символов с пробелами: '+str(n1))
+print('Количество символов без пробелов: '+str(n2))
+print('------------------------------------------')
+print(pyperclip.paste())
